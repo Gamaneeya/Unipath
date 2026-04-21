@@ -18,8 +18,8 @@ import CareerMatches from "./pages/student/CareerMatches.tsx";
 import UniversityLayout from "./pages/university/UniversityLayout.tsx";
 import UniDashboard from "./pages/university/UniDashboard.tsx";
 import DataUpload from "./pages/university/DataUpload.tsx";
-import UniAnalytics from "./pages/university/UniAnalytics.tsx";
-import UniStudents from "./pages/university/UniStudents.tsx";
+import UniAnalytics from "./pages/university/UniAnalytics";
+import UniStudents from "./pages/university/UniStudents";
 
 export const router = createBrowserRouter([
   {
@@ -27,6 +27,10 @@ export const router = createBrowserRouter([
     children: [
       {
         path: "/",
+        Component: LoginPage,
+      },
+      {
+        path: "/home",
         Component: LandingPage,
       },
       {
