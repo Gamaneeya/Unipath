@@ -17,8 +17,8 @@ import {
   Moon,
   Sun,
 } from "lucide-react";
-import { useApp } from "../contexts/AppContext";
-import { useTheme } from "../contexts/ThemeContext";
+import { useApp } from "../contexts/AppContext.tsx";
+import { useTheme } from "../contexts/ThemeContext.tsx";
 import {
   Combobox,
   type ComboboxOption,

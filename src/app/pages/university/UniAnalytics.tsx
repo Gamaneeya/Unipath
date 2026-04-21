@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { UNI_MOCK_DATA } from "../../data/mockData";
+import { UNI_MOCK_DATA } from "../../data/mockData.ts";
 import { AlertCircle, TrendingUp, CheckCircle, XCircle, Download, ChevronLeft, ChevronRight } from "lucide-react";
 
 // ─── Custom Horizontal Bar Chart (replaces recharts BarChart) ────────────────

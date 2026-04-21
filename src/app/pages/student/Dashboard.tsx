@@ -18,11 +18,11 @@ import {
   AlertTriangle,
   Signal,
 } from "lucide-react";
-import { useApp } from "../../contexts/AppContext";
-import { JOB_ROLES } from "../../data/mockData";
-import { AddRolesModal } from "../../components/AddRolesModal";
+import { useApp } from "../../contexts/AppContext.tsx";
+import { JOB_ROLES } from "../../data/mockData.ts";
+import { AddRolesModal } from "../../components/AddRolesModal.tsx";
 import { useState } from "react";
-import { AnalysisFlowModal } from "../../components/AnalysisFlowModal";
+import { AnalysisFlowModal } from "../../components/AnalysisFlowModal.tsx";
 
 function MatchRing({ percentage }: { percentage: number }) {
   const r = 36;

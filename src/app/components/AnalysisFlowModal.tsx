@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "motion/react";
 import { CheckCircle2, Loader2, Sparkles } from "lucide-react";
 import { useNavigate } from "react-router";
-import { useApp } from "../contexts/AppContext";
+import { useApp } from "../contexts/AppContext.tsx";
 
 export function AnalysisFlowModal({ isOpen, onClose }: { isOpen: boolean; onClose: () => void }) {
   const [step, setStep] = useState(0);

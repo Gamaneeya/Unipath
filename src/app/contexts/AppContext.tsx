@@ -11,7 +11,7 @@ import {
   calculateMatch,
   Course,
   Experience,
-} from "../data/mockData";
+} from "../data/mockData.ts";
 
 type UserRole = "student" | "university" | null;
 

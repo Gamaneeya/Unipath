@@ -1,7 +1,7 @@
 import { Outlet, useLocation, useNavigate } from "react-router";
 import { useEffect, Component, ReactNode } from "react";
-import { AppProvider } from "../contexts/AppContext";
-import { ThemeProvider } from "../contexts/ThemeContext";
+import { AppProvider } from "../contexts/AppContext.tsx";
+import { ThemeProvider } from "../contexts/ThemeContext.tsx";
 
 function ScrollToTop() {
   const { pathname } = useLocation();

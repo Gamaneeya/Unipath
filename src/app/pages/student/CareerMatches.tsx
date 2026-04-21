@@ -9,8 +9,8 @@ import {
   Trophy,
   LayoutDashboard,
 } from "lucide-react";
-import { useApp } from "../../contexts/AppContext";
-import { JOB_ROLES } from "../../data/mockData";
+import { useApp } from "../../contexts/AppContext.tsx";
+import { JOB_ROLES } from "../../data/mockData.ts";
 
 function MatchRing({
   percentage,

@@ -11,9 +11,9 @@ import {
   ArrowRight,
   Shield,
 } from "lucide-react";
-import { useApp } from "../../contexts/AppContext";
+import { useApp } from "../../contexts/AppContext.tsx";
 import { useNavigate } from "react-router";
-import { Course } from "../../data/mockData";
+import { Course } from "../../data/mockData.ts";
 
 type UploadStep = "consent" | "upload" | "processing" | "verify" | "done";
 

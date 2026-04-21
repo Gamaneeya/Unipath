@@ -11,8 +11,8 @@ import {
   Users,
   X,
 } from "lucide-react";
-import { useApp } from "../../contexts/AppContext";
-import { ThemeDropdown } from "../../components/ThemeDropdown";
+import { useApp } from "../../contexts/AppContext.tsx";
+import { ThemeDropdown } from "../../components/ThemeDropdown.tsx";
 
 const NAV_ITEMS = [
   { path: "/university", label: "Overview", icon: LayoutDashboard, exact: true },

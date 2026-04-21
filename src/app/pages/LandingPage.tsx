@@ -15,7 +15,7 @@ import {
   Users,
   Zap,
 } from "lucide-react";
-import { ThemeDropdown } from "../components/ThemeDropdown";
+import { ThemeDropdown } from "../components/ThemeDropdown.tsx";
 
 const HERO_IMG =
   "https://images.unsplash.com/photo-1723149842407-637a523fb029?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxnYW1pbmclMjBzdHVkZW50JTIwbGFwdG9wfGVufDF8fHx8MTc3Mzc2NjYxMXww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral";

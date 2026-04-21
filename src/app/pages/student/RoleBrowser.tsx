@@ -10,8 +10,8 @@ import {
   Sparkles,
   History,
 } from "lucide-react";
-import { JOB_ROLES } from "../../data/mockData";
-import { useApp } from "../../contexts/AppContext";
+import { JOB_ROLES } from "../../data/mockData.ts";
+import { useApp } from "../../contexts/AppContext.tsx";
 
 const EXAMPLE_ROLES = ["Backend Developer", "Data Analyst", "UX Designer"];
 

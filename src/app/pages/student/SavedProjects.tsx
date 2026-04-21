@@ -1,7 +1,7 @@
 import { useNavigate } from "react-router";
 import { Lightbulb, Trash2, ArrowRight, BookOpen } from "lucide-react";
-import { useApp } from "../../contexts/AppContext";
-import { PROJECT_IDEAS } from "../../data/mockData";
+import { useApp } from "../../contexts/AppContext.tsx";
+import { PROJECT_IDEAS } from "../../data/mockData.ts";
 
 const CUSTOM_PROJECTS = [
   {

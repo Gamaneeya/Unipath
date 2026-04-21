@@ -13,8 +13,8 @@ import {
   CalendarDays,
   Briefcase,
 } from "lucide-react";
-import { JOB_ROLES, PROJECT_IDEAS } from "../../data/mockData";
-import { useApp } from "../../contexts/AppContext";
+import { JOB_ROLES, PROJECT_IDEAS } from "../../data/mockData.ts";
+import { useApp } from "../../contexts/AppContext.tsx";
 
 export default function RoleDetail() {
   const { roleId } = useParams<{ roleId: string }>();

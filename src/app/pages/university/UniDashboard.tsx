@@ -9,7 +9,7 @@ import {
   Activity,
   ChevronLeft,
 } from "lucide-react";
-import { UNI_MOCK_DATA } from "../../data/mockData";
+import { UNI_MOCK_DATA } from "../../data/mockData.ts";
 import { useState } from "react";
 
 function MiniLineChart({

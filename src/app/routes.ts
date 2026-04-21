@@ -1,25 +1,25 @@
 import { createBrowserRouter } from "react-router";
 
-import RootLayout from "./pages/RootLayout";
-import LandingPage from "./pages/LandingPage";
-import { LoginPage, RegisterPage } from "./pages/AuthPages";
+import RootLayout from "./pages/RootLayout.tsx";
+import LandingPage from "./pages/LandingPage.tsx";
+import { LoginPage, RegisterPage } from "./pages/AuthPages.tsx";
 
-import StudentLayout from "./pages/student/StudentLayout";
-import Dashboard from "./pages/student/Dashboard";
-import Profile from "./pages/student/Profile";
-import UploadCurriculum from "./pages/student/UploadCurriculum";
-import RoleBrowser from "./pages/student/RoleBrowser";
-import RoleDetail from "./pages/student/RoleDetail";
-import CustomAnalysis from "./pages/student/CustomAnalysis";
-import CustomRoleDetail from "./pages/student/CustomRoleDetail";
-import SavedProjects from "./pages/student/SavedProjects";
-import CareerMatches from "./pages/student/CareerMatches";
+import StudentLayout from "./pages/student/StudentLayout.tsx";
+import Dashboard from "./pages/student/Dashboard.tsx";
+import Profile from "./pages/student/Profile.tsx";
+import UploadCurriculum from "./pages/student/UploadCurriculum.tsx";
+import RoleBrowser from "./pages/student/RoleBrowser.tsx";
+import RoleDetail from "./pages/student/RoleDetail.tsx";
+import CustomAnalysis from "./pages/student/CustomAnalysis.tsx";
+import CustomRoleDetail from "./pages/student/CustomRoleDetail.tsx";
+import SavedProjects from "./pages/student/SavedProjects.tsx";
+import CareerMatches from "./pages/student/CareerMatches.tsx";
 
-import UniversityLayout from "./pages/university/UniversityLayout";
-import UniDashboard from "./pages/university/UniDashboard";
-import DataUpload from "./pages/university/DataUpload";
-import UniAnalytics from "./pages/university/UniAnalytics";
-import UniStudents from "./pages/university/UniStudents";
+import UniversityLayout from "./pages/university/UniversityLayout.tsx";
+import UniDashboard from "./pages/university/UniDashboard.tsx";
+import DataUpload from "./pages/university/DataUpload.tsx";
+import UniAnalytics from "./pages/university/UniAnalytics.tsx";
+import UniStudents from "./pages/university/UniStudents.tsx";
 
 export const router = createBrowserRouter([
   {

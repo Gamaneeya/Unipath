@@ -11,7 +11,7 @@ import {
   CalendarDays,
   AlertTriangle,
 } from "lucide-react";
-import { useApp } from "../../contexts/AppContext";
+import { useApp } from "../../contexts/AppContext.tsx";
 import { useEffect, useState } from "react";
 
 const GENERATED_PROJECTS = [

@@ -10,7 +10,7 @@ import {
   Bookmark,
   BookmarkCheck,
 } from "lucide-react";
-import { useApp } from "../../contexts/AppContext";
+import { useApp } from "../../contexts/AppContext.tsx";
 
 // Skill keywords to extract from JD text
 const SKILL_KEYWORDS = [

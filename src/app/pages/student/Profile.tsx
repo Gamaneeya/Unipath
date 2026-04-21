@@ -13,8 +13,8 @@ import {
   Check,
   AlertTriangle,
 } from "lucide-react";
-import { useApp } from "../../contexts/AppContext";
-import { Course, Experience } from "../../data/mockData";
+import { useApp } from "../../contexts/AppContext.tsx";
+import { Course, Experience } from "../../data/mockData.ts";
 
 const SUGGESTED_SKILLS = [
   "Python", "JavaScript", "TypeScript", "React", "Node.js", "SQL", "Git",

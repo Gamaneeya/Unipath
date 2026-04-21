@@ -2,8 +2,8 @@
 
 import * as React from "react";
 import { Check, ChevronsUpDown } from "lucide-react";
-import { cn } from "./utils";
-import { Button } from "./button";
+import { cn } from "./utils.ts";
+import { Button } from "./button.tsx";
 import {
   Command,
   CommandEmpty,

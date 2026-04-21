@@ -1,6 +1,6 @@
 import { useState, useRef, useEffect } from "react";
 import { Sun, Moon, Eye, ChevronDown } from "lucide-react";
-import { useTheme } from "../contexts/ThemeContext";
+import { useTheme } from "../contexts/ThemeContext.tsx";
 
 interface ThemeDropdownProps {
   variant?: "default" | "compact";
