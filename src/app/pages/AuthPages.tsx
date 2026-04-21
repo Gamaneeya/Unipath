@@ -1031,7 +1031,7 @@ function UniversityRequestPage({
               </span>
             </p>
             <button
-              onClick={() => navigate("/home")}
+              onClick={() => navigate("/")}
               className="inline-flex items-center gap-2 bg-primary text-primary-foreground px-8 py-3.5 rounded-2xl border-b-4 border-secondary hover:bg-primary/90 active:border-b-0 active:translate-y-1 transition-all text-base font-black shadow-md"
             >
               Back to Home
