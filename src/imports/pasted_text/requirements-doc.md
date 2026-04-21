@@ -1,0 +1,45 @@
+1. Functional Requirements (FR)
+Module A: Authentication & Account Management
+FR-01 [M]: The system shall allow users to register by choosing between two account types: Personal Account (General Student) or Partner University Account (Student linked to a registered University).
+FR-02 [M]: The system shall utilize Role-Based Access Control (RBAC) to restrict access to features based on the user's role: Student vs. University Partner Admin.
+Module B: Student Profile & Data Acquisition (Input)
+FR-03 [M]: The system shall allow students (specifically Non-Partner Accounts) to upload course curriculum in PDF format only, with a maximum file size of 50MB.
+FR-04 [M]: The system shall extract the following fields from PDFs: Course Code (Unique ID), Course Name, and Course Description.
+FR-05 [M]: The system shall provide a Verification Interface that allows students to:
+Edit/Delete parsed course data.
+Add/Remove courses for specific semesters (handling Add/Drop).
+Manually paste descriptions for courses with missing data.
+FR-06 [S]: The system shall allow students to manually input External Experiences (Title, Role, Description) and Specific Skills (e.g., "Figma", "Public Speaking").
+FR-07 [S]: For users with a Partner University Account, the system shall automatically synchronize the full academic curriculum (enrolled courses and descriptions) via API immediately upon login, eliminating the need for manual PDF uploads.
+Module C: Career Analysis & Role Matching (Core Logic)
+FR-08 [M] (Universal Scoring Engine): The system shall implement a scoring algorithm that calculates a Match Percentage (%) for any given Job Role by comparing the student's verified skills against the role's required skill list.
+FR-09 [M] (Automated Discovery): Immediately upon any profile update (e.g., adding new personal projects), the system shall analyze the Top 3 Job Roles with the highest Match Percentages.
+FR-10 [M] (Multi-Role Tracking): The system shall allow students to browse and "Save" multiple Target Roles to their personal dashboard 
+FR-11 [M] (Global Re-Analysis Trigger): The system shall trigger a Real-Time Re-calculation event whenever a student modifies their profile. This must update the Match Percentages for:
+The Top 3 Recommendations (FR-10).
+All of the student's Saved Target Roles (FR-11).
+FR-12 [M] (Dashboard Management): The system shall provide a management interface allowing students to Remove/Delete Saved Target Roles they are no longer interested in.
+FR-13 [M] (Gap Visualization): For every role (Saved or Recommended), the system shall generate a detailed Gap Analysis categorizing required skills into: Acquired and Missing.
+FR-14 [M] (Progress History): The system shall store the History of the Analysis for each Saved Target Role, allowing students to visualize their improvement trend over time.
+FR-15 [S] (Bring Your Own JD): The system shall support a "Custom Role Analysis" feature, parsing user-pasted text to generate a Gap Analysis and Project Recommendation against a unique job description.
+Module D: Actionable Recommendations (Output)
+FR-16 [S]: The system shall generate Side Project Ideas using GenAI, tailored specifically to the skills identified as "Missing" in the Gap Analysis.
+FR-17 [S]: The system shall provide a Saved Projects List where students can bookmark and manage specific project ideas for future reference. This list shall be accessible directly from the student dashboard.
+Module E: University Partner Portal (B2B)
+FR-18 [M]: The system shall provide a Registration Form for University Partners to create an institutional account and generate API credentials.
+FR-19 [M]: The system shall allow University Admins to upload Student Enrollment Data and Official Course Catalogs (CSV/JSON) to serve as data for Partner Students.
+FR-20 [S]: The system shall generate an "Interest Analytics Dashboard" displaying aggregate data on which job roles are most "Added" by students of that university.
+FR-21 [S]: The system shall generate a high-demand skills listing (frequently required by students' Target Roles) that are not present in the University's uploaded Course Catalog.
+2. Non-Functional Requirements (NFR)
+Performance & Reliability
+NFR-01 (Response Time): The Curriculum Parsing process (PDF Upload → Verification UI) must complete within 15 seconds to ensure user engagement.
+NFR-02 (Data Persistence): The system shall auto-save drafted profile information while they are editing or adding course data to prevent data loss if the browser is closed.
+NFR-03 (Scalability): The system shall be capable of handling simultaneous PDF uploads from 100 concurrent users (e.g., during University registration week) without crashing.
+Security & Privacy
+NFR-04 (PDPA Compliance): All Student Academic Records (Enrollment) must be encrypted at rest (AES-256) and in transit (TLS 1.3).
+NFR-05 (Data Privacy): The system shall display only aggregated statistics in the university analytics dashboard and shall not reveal individual student identities.
+NFR-06 (Consent): The system must present a mandatory Data Consent Modal explaining how academic data will be processed before allowing any file upload.
+Usability
+NFR-07 (Mobile Responsiveness): The system shall support responsive design so that the student dashboard can be accessed and displayed properly on desktops, tablets, and mobile devices.
+NFR-08 (Error Feedback): The system must provide human-readable error messages for parsing failures (e.g., "We could not read this PDF. Please ensure it is text-searchable and not a scanned image").
+
