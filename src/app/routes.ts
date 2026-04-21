@@ -27,10 +27,6 @@ export const router = createBrowserRouter([
     children: [
       {
         path: "/",
-        Component: LoginPage,
-      },
-      {
-        path: "/home",
         Component: LandingPage,
       },
       {
