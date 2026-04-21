@@ -1201,7 +1201,7 @@ function UniversityRequestPage({
         </div>
 
         <button
-          onClick={() => navigate("/home")}
+          onClick={() => navigate("/")}
           className="flex items-center gap-1.5 text-sm text-muted-foreground hover:text-foreground mx-auto mt-8 transition-colors font-bold bg-card px-4 py-2 rounded-xl shadow-sm border border-border"
         >
           <ArrowLeft className="w-4 h-4" /> Back to Home
